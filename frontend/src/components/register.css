@@ -1,0 +1,122 @@
+/* Container chính cho trang đăng ký */
+.register-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff; /* Màu nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ để tạo độ nổi */
+    transition: all 0.3s ease;
+}
+
+.register-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bóng đổ đậm hơn khi hover */
+}
+
+/* Biểu mẫu đăng ký */
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Nhãn của mỗi input */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Các trường input */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    background-color: #fafafa; /* Nền nhạt cho trường input */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #5cb85c; /* Đổi màu viền khi focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5); /* Hiệu ứng đổ bóng */
+}
+
+/* Nút đăng ký */
+.register-button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5cb85c; /* Màu xanh cho nút đăng ký */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #4cae4c; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Phần hiển thị thông báo */
+.message-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f8d7da; /* Màu nền thông báo */
+    color: #721c24; /* Màu chữ thông báo */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Liên kết quay lại trang đăng nhập */
+.login-redirect {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-redirect a {
+    color: #5cb85c; /* Màu xanh cho liên kết "Đăng nhập" */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-redirect a:hover {
+    color: #4cae4c; /* Màu xanh đậm hơn khi hover */
+    text-decoration: underline;
+}
+
+/* Thiết lập responsive cho thiết bị nhỏ */
+@media (max-width: 400px) {
+    .register-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Hiển thị thông báo lỗi cho từng trường input */
+.error-message {
+    color: red; /* Màu đỏ cho thông báo lỗi */
+    font-size: 14px;
+    margin-top: 5px;
+}

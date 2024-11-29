@@ -1,0 +1,119 @@
+/* Container chính của trang đăng nhập */
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff; /* Màu nền trắng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    transition: all 0.3s ease;
+}
+
+.login-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bóng đổ đậm hơn khi hover */
+}
+
+
+
+/* Biểu mẫu đăng nhập */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Nhãn của các trường nhập liệu */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Các trường nhập liệu */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #5cb85c; /* Đổi màu viền khi focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5); /* Hiệu ứng đổ bóng */
+}
+
+/* Nút đăng nhập */
+.login-button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5cb85c; /* Màu xanh */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #4cae4c; /* Đổi màu khi hover */
+}
+
+/* Phần hiển thị thông báo lỗi */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Liên kết đăng ký */
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #5cb85c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #4cae4c;
+    text-decoration: underline;
+}
+
+/* Responsive cho thiết bị nhỏ */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+/* Phần hiển thị thông báo lỗi */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f8d7da; /* Màu nền nhẹ để báo lỗi */
+    padding: 10px;
+    border-radius: 5px;
+}
